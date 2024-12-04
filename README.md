@@ -60,6 +60,11 @@ Guía rápida de comandos esenciales para Kubernetes, Git, Docker, Argo CLI y te
   kubectl get pods -n <namespace>
   ```
 
+- **Escalar todo un tipo de servicio en un namespace**
+  ```bash
+  kubectl scale <tipo_servicio> --all --replicas=<n> -n <namespace>
+  ```
+
 ---
 
 ## 🧑‍💻 Git
