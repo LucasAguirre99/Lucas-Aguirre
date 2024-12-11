@@ -162,3 +162,20 @@ Esto habilita configuraciones generales en /etc/apache2/conf-available, lo que p
 Elimina el enlace simbólico en conf-enabled, evitando que apache cargue la configuración global
 
 ---
+
+## Crear comandos
+
+Para crear comandos simplemente podemos hacer un alias o un script
+
+### alias
+
+- zsh: 
+  ```bash
+  nano ~/.zshrc
+  
+  alias <nombre>=<ejecución>
+
+  source ~/.bashrc
+  ```
+
+
