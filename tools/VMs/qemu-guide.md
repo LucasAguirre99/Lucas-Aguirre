@@ -5,7 +5,7 @@ Si necesitamos levantar ISO de diferentes kvm, una solución más rápida que vi
 - **Instalación**:
   ```bash
   sudo apt update
-  sudo apt qemu-kvm libvirt-daemon-system virt-manager -y
+  sudo apt install qemu-kvm libvirt-daemon-system virt-manager -y
   ```
 
 - **Podemos manejarlo por la interfaz gráfica**
