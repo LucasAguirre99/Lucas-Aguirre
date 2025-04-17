@@ -65,6 +65,11 @@ Guía rápida de comandos esenciales para Kubernetes, Git, Docker, Argo CLI y te
   kubectl scale <tipo_servicio> --all --replicas=<n> -n <namespace>
   ```
 
+- **Pasar Archivos de un pod a otro, sin importar el namespace**
+  ```bash
+  kubectl exec -n <namespace> <pod> -- tar cf - <archivo> \
+  | kubectl exec -i -n <namespace> <pod> -- tar xf - -C <archivo>
+  ```
 ---
 
 ## 🧑‍💻 Git
