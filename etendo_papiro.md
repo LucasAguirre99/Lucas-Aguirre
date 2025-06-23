@@ -69,6 +69,18 @@ Después simplemente habilidar el crontab. Si queremos hacer el backup de manera
 
 Esto nos va a generar un backup dentro de /backups/backup-manual
 
+Hay archivos de configuración muy importantes donde hay que cambiar las credenciales y demás para que todo esto funcione, el script que ejecuta la
+sincronización con aws s3 está en: 
+
+``` bash
+  /usr/share/etendo/backup/sync-methods/sync-s3
+``` 
+
+Para modificar las credenciales las mismas están en: 
+``` bash
+  ~/.s3cfg
+``` 
+
 ---
 ## 🌐 Bibliografía y enlaces importantes
 
