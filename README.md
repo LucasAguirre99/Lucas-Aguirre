@@ -219,3 +219,24 @@ Para crear comandos simplemente podemos hacer un alias o un script
   sed -i "s/Palabra_a_reemplazar/${Valor_a_reemplazar}/g" archivo_donde_se_reemplaza
   ```
 
+---
+# Base de datos (Postgres)
+
+- Conectarse a la base de datos 
+  ```bash
+  psql -U usuario -h Ip-db -d base_de_datos
+  ```
+
+- frenar todas las conexiónes activas de etendo
+  ```bash 
+  psql -U postgres -d postgres -c "
+  SELECT pg_terminate_backend(pid)
+  FROM pg_stat_activity
+  WHERE datname = 'etendo' AND pid <> pg_backend_pid();
+  "
+  ```
+
+- Restaurar base de datos en formato .dump
+  ```bash
+  pg_restore -U user -d base_de_datos -c backup.dump
+  ```

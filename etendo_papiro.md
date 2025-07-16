@@ -81,6 +81,11 @@ Para modificar las credenciales las mismas están en:
   ~/.s3cfg
 ``` 
 
+Para Restaurar un etendo-backup
+```bash
+  etendo-restore backup.tar
+```
+
 ---
 ## 🌐 Bibliografía y enlaces importantes
 
