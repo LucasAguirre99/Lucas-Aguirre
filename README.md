@@ -105,7 +105,13 @@ Esto también se puede lograr haciendo un rebase -i y poner squash en los commit
   git restore --source <branch> carpeta_seleccionada/
   ```
 
+- **Eliminar ramas de repositorios**
+  ```bash
+  git branch -D <branch>
+  git push origin --delete <nombre_de_la_rama_remota>
+  ```
 
+  
 Después de esto en la consola que se habre escribir *reword* en los commits que se quieran cambiar, acto seguido nos va a dejar poner el nuevo nombre, después hacemos un push con --force
 
 ---
