@@ -48,6 +48,14 @@ Dockerizar servicios:
   - docker_com.etendoerp.db_port=<port>
 ---
 
+### Archivos importantes
+
+  - Configuración del tomcat
+  ```
+    /var/lib/tomcat/conf/server.xml
+  ``` 
+
+---
 ### RX
 
 Para poder tener RX son necesarios 2 cosas, primero tenemos el etendo_base, al mismo debemos de ponerle el módulo de com.etendoerp.etendorx dentro de la carpeta de modulos. 
