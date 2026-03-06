@@ -1,11 +1,16 @@
-/* Center main content (compensate for MkDocs Material TOC right-sidebar offset) */
-.md-content {
-  max-width: 100%;
-  margin: 0 auto;
+/* Ocultar sidebar izquierdo redundante (los tabs ya muestran la nav completa) */
+.md-sidebar--primary {
+  display: none !important;
 }
 
+/* Centrar el contenido principal */
 .md-main__inner {
   justify-content: center;
+}
+
+.md-content {
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 /* CV Header */
