@@ -9,13 +9,14 @@ hide:
 
 **DevOps & Cloud Infrastructure Engineer**
 
-Kubernetes · Jenkins · Argo CD · Docker · Helm · AWS
+Kubernetes · Jenkins · Argo CD · Docker · Terraform · Helm · AWS
 
 <div class="lang-switcher" markdown>
-**🌐** &nbsp; **ES** &nbsp;·&nbsp; [EN](en/) &nbsp;·&nbsp; [FR](fr/)
+**:material-web:** &nbsp; **ES** &nbsp;·&nbsp; [EN](en/) &nbsp;·&nbsp; [FR](fr/)
 </div>
 
 [:fontawesome-brands-linkedin: LinkedIn](https://linkedin.com/in/lucas-aguirre-99-ar){ .md-button .md-button--primary }
+[:fontawesome-brands-github: GitHub](https://github.com/LucasAguirre99){ .md-button .md-button--primary }
 [:fontawesome-solid-envelope: Email](mailto:aguirrelucas.unrc@gmail.com){ .md-button }
 [:fontawesome-solid-file-pdf: Descargar CV](assets/CV-2026-DevOps-ENG.pdf){ .md-button }
 
@@ -25,7 +26,7 @@ Kubernetes · Jenkins · Argo CD · Docker · Helm · AWS
 
 ## Sobre mi
 
-Ingeniero en Telecomunicaciones especializado en DevOps con experiencia integral en gestión de infraestructura cloud, orquestación de contenedores y entrega continua. Trabajo día a día con Kubernetes, Jenkins, Argo CD, Argo Workflows, Docker, Helm y AWS, con foco en automatizar procesos, garantizar la disponibilidad de los servicios y optimizar los pipelines CI/CD.
+Ingeniero en Telecomunicaciones especializado en DevOps con mas de 2 anos de experiencia gestionando infraestructura cloud en produccion. Trabajo a diario con Kubernetes, Jenkins, Argo CD, Argo Workflows, Docker, Helm, Terraform y AWS, aplicando practicas de Infrastructure as Code (IaC), GitOps y observabilidad completa para automatizar procesos, garantizar la disponibilidad de los servicios y optimizar pipelines CI/CD de extremo a extremo.
 
 ---
 
@@ -39,21 +40,23 @@ Ingeniero en Telecomunicaciones especializado en DevOps con experiencia integral
 - Kubernetes (k9s, Helm, Helmfile)
 - Docker / Docker Compose
 - Gestion de registros de imagenes (ECR)
+- HPAs, PVCs, Ingress, ConfigMaps, Secrets
 </div>
 
 <div class="skill-card" markdown>
 **CI/CD y GitOps**
 
 - Jenkins (Declarative Pipelines)
-- Argo CD
-- Argo Workflows
+- Argo CD (sync automatico, self-heal, rollbacks)
+- Argo Workflows (DAGs, CronWorkflows, Templates)
 - GitHub Actions
 </div>
 
 <div class="skill-card" markdown>
-**Cloud**
+**Cloud e IaC**
 
 - AWS: EC2, S3, IAM, ECR, EKS
+- Terraform
 - DigitalOcean, Scaleway
 - Secrets Manager, Parameter Store
 </div>
@@ -62,7 +65,7 @@ Ingeniero en Telecomunicaciones especializado en DevOps con experiencia integral
 **Observabilidad**
 
 - Prometheus + PromQL
-- Grafana
+- Grafana (dashboards, alertas)
 - Loki + LogQL
 - Alertmanager
 </div>
@@ -73,7 +76,7 @@ Ingeniero en Telecomunicaciones especializado en DevOps con experiencia integral
 - Linux (Ubuntu / Debian / RHEL)
 - Bash scripting
 - Python
-- Ansible
+- Ansible (playbooks, roles, vault)
 - PostgreSQL
 </div>
 
@@ -81,8 +84,8 @@ Ingeniero en Telecomunicaciones especializado en DevOps con experiencia integral
 **Idiomas**
 
 - Espanol — Nativo
-- Ingles — B1
-- Frances — B2
+- Ingles — B1 (Intermedio)
+- Frances — B2 (Intermedio alto)
 </div>
 
 </div>
@@ -99,7 +102,7 @@ Ingeniero en Telecomunicaciones especializado en DevOps con experiencia integral
 
 Responsable de la infraestructura DevOps de los entornos de produccion y desarrollo. Gestiono el ciclo completo: desde el build de la imagen hasta el despliegue en produccion, el monitoreo y las alertas.
 
-**Kubernetes y contenedores**
+**Kubernetes y Contenedores**
 
 - Administracion de clusters de Kubernetes en DigitalOcean y Scaleway
 - Gestion de Deployments, Services, Ingress, ConfigMaps, Secrets, PVCs y HPAs
@@ -110,10 +113,10 @@ Responsable de la infraestructura DevOps de los entornos de produccion y desarro
 
 - Diseno e implementacion de pipelines CI/CD con Jenkins (Declarative Pipelines): build, test, push y deploy
 - GitOps con Argo CD: gestion de Applications, sync automatico, self-heal y rollbacks
-- Automatizacion de tareas programadas y workflows con Argo Workflows: DAGs, CronWorkflows y WorkflowTemplates reutilizables
-- Automatizacion de flujos de trabajo con GitHub Actions
+- Automatizacion de tareas programadas con Argo Workflows: DAGs, CronWorkflows y WorkflowTemplates reutilizables
+- Automatizacion de flujos con GitHub Actions
 
-**Despliegue de aplicaciones**
+**Despliegue de Aplicaciones**
 
 - Despliegue y gestion del ciclo de vida de aplicaciones con Helm (install, upgrade, rollback)
 - Gestion de multiples releases y entornos con Helmfile
@@ -125,9 +128,10 @@ Responsable de la infraestructura DevOps de los entornos de produccion y desarro
 - Escritura de consultas PromQL y LogQL para dashboards y alertas
 - Configuracion de Alertmanager: reglas, rutas y notificaciones
 
-**Infraestructura Cloud (AWS)**
+**Infraestructura Cloud e IaC (AWS)**
 
 - Gestion de instancias EC2, buckets S3, permisos IAM, repositorios ECR y clusters EKS
+- Provisionamiento de infraestructura con Terraform
 - Creacion de AMIs personalizadas para estandarizar despliegues
 - Gestion de secretos con AWS Secrets Manager y SSM Parameter Store
 
@@ -171,7 +175,7 @@ Participacion en el proyecto de virtualizacion del laboratorio. Desarrollo de pr
 <div class="edu-card" markdown>
 ### :material-school: Ingenieria en Telecomunicaciones
 **Institut National des Sciences Appliquees de Lyon (INSA Lyon)**
-2023 – 2024 · Intercambio
+2023 – 2024 · Intercambio universitario
 </div>
 
 </div>
@@ -180,7 +184,7 @@ Participacion en el proyecto de virtualizacion del laboratorio. Desarrollo de pr
 
 ## Certificaciones y Formaciones
 
-- :material-certificate: Cibersecurity - Ethical Hacking *(En curso)*
+- :material-certificate: Cybersecurity — Ethical Hacking *(En curso)*
 - :material-certificate: AWS Certified Developer Associate DVA-C02 *(En curso)*
 - :material-certificate: DevOps con Docker, Jenkins, Kubernetes, Git, GitFlow, CI/CD
 - :material-certificate: SO Linux para avanzados

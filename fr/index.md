@@ -9,13 +9,14 @@ hide:
 
 **Ingénieur DevOps & Infrastructure Cloud**
 
-Kubernetes · Jenkins · Argo CD · Docker · Helm · AWS
+Kubernetes · Jenkins · Argo CD · Docker · Terraform · Helm · AWS
 
 <div class="lang-switcher" markdown>
-**🌐** &nbsp; [ES](../) &nbsp;·&nbsp; [EN](../en/) &nbsp;·&nbsp; **FR**
+**:material-web:** &nbsp; [ES](../) &nbsp;·&nbsp; [EN](../en/) &nbsp;·&nbsp; **FR**
 </div>
 
 [:fontawesome-brands-linkedin: LinkedIn](https://linkedin.com/in/lucas-aguirre-99-ar){ .md-button .md-button--primary }
+[:fontawesome-brands-github: GitHub](https://github.com/LucasAguirre99){ .md-button .md-button--primary }
 [:fontawesome-solid-envelope: Email](mailto:aguirrelucas.unrc@gmail.com){ .md-button }
 [:fontawesome-solid-file-pdf: Télécharger CV](../assets/CV-2026-DevOps-ENG.pdf){ .md-button }
 
@@ -25,7 +26,7 @@ Kubernetes · Jenkins · Argo CD · Docker · Helm · AWS
 
 ## Profil
 
-Ingénieur en Télécommunications spécialisé en DevOps avec une expérience complète en gestion d'infrastructure cloud, orchestration de conteneurs et livraison continue. Je travaille quotidiennement avec Kubernetes, Jenkins, Argo CD, Argo Workflows, Docker, Helm et AWS, avec un focus sur l'automatisation des processus, la disponibilité des services et l'optimisation des pipelines CI/CD.
+Ingénieur en Télécommunications spécialisé en DevOps avec plus de 2 ans d'expérience dans la gestion d'infrastructure cloud en production. Je travaille quotidiennement avec Kubernetes, Jenkins, Argo CD, Argo Workflows, Docker, Helm, Terraform et AWS, en appliquant les pratiques d'Infrastructure as Code (IaC), GitOps et observabilité complète pour automatiser les processus, garantir la disponibilité des services et optimiser les pipelines CI/CD de bout en bout.
 
 ---
 
@@ -39,21 +40,23 @@ Ingénieur en Télécommunications spécialisé en DevOps avec une expérience c
 - Kubernetes (k9s, Helm, Helmfile)
 - Docker / Docker Compose
 - Gestion de registres d'images (ECR)
+- HPAs, PVCs, Ingress, ConfigMaps, Secrets
 </div>
 
 <div class="skill-card" markdown>
 **CI/CD et GitOps**
 
 - Jenkins (Declarative Pipelines)
-- Argo CD
-- Argo Workflows
+- Argo CD (sync automatique, self-heal, rollbacks)
+- Argo Workflows (DAGs, CronWorkflows, Templates)
 - GitHub Actions
 </div>
 
 <div class="skill-card" markdown>
-**Cloud**
+**Cloud et IaC**
 
 - AWS : EC2, S3, IAM, ECR, EKS
+- Terraform
 - DigitalOcean, Scaleway
 - Secrets Manager, Parameter Store
 </div>
@@ -62,7 +65,7 @@ Ingénieur en Télécommunications spécialisé en DevOps avec une expérience c
 **Observabilité**
 
 - Prometheus + PromQL
-- Grafana
+- Grafana (dashboards, alertes)
 - Loki + LogQL
 - Alertmanager
 </div>
@@ -73,7 +76,7 @@ Ingénieur en Télécommunications spécialisé en DevOps avec une expérience c
 - Linux (Ubuntu / Debian / RHEL)
 - Scripts Bash
 - Python
-- Ansible
+- Ansible (playbooks, rôles, vault)
 - PostgreSQL
 </div>
 
@@ -81,8 +84,8 @@ Ingénieur en Télécommunications spécialisé en DevOps avec une expérience c
 **Langues**
 
 - Espagnol — Langue maternelle
-- Anglais — B1
-- Français — B2
+- Anglais — Intermédiaire (B1)
+- Français — Intermédiaire supérieur (B2)
 </div>
 
 </div>
@@ -97,7 +100,7 @@ Ingénieur en Télécommunications spécialisé en DevOps avec une expérience c
 ### :material-briefcase: Futit Services
 **Ingénieur DevOps** · Mars 2024 – Présent
 
-Responsable de l'infrastructure DevOps des environnements de production et de développement. Je gère le cycle complet : du build de l'image au déploiement en production, en passant par le monitoring et les alertes.
+Responsable de l'infrastructure DevOps des environnements de production et de développement. Gestion du cycle complet : du build de l'image au déploiement en production, en passant par le monitoring et les alertes.
 
 **Kubernetes et Conteneurs**
 
@@ -125,9 +128,10 @@ Responsable de l'infrastructure DevOps des environnements de production et de d�
 - Requêtes PromQL et LogQL pour dashboards et alertes
 - Configuration d'Alertmanager : règles, routage et notifications
 
-**Infrastructure Cloud (AWS)**
+**Infrastructure Cloud et IaC (AWS)**
 
 - Gestion des instances EC2, buckets S3, permissions IAM, dépôts ECR et clusters EKS
+- Provisionnement d'infrastructure avec Terraform
 - Création d'AMIs personnalisées pour standardiser les déploiements
 - Gestion des secrets avec AWS Secrets Manager et SSM Parameter Store
 
@@ -180,6 +184,7 @@ Participation au projet de virtualisation du laboratoire. Développement de proj
 
 ## Certifications et Formations
 
+- :material-certificate: Cybersecurity — Ethical Hacking *(En cours)*
 - :material-certificate: AWS Certified Developer Associate DVA-C02 *(En cours)*
 - :material-certificate: DevOps avec Docker, Jenkins, Kubernetes, Git, GitFlow, CI/CD
 - :material-certificate: Linux pour utilisateurs avancés

@@ -145,6 +145,11 @@
   text-decoration: underline;
 }
 
+/* Contact buttons row */
+.cv-header .md-button {
+  margin: 0.2rem 0.3rem;
+}
+
 /* Responsive tweaks */
 @media (max-width: 600px) {
   .cv-header h1 {
@@ -154,5 +159,51 @@
   .skills-grid,
   .education-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Print styles */
+@media print {
+  .md-header,
+  .md-sidebar,
+  .md-footer,
+  .md-tabs,
+  .lang-switcher,
+  .md-button {
+    display: none !important;
+  }
+
+  .md-content {
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .cv-header {
+    padding: 1rem 0 0.5rem;
+  }
+
+  .cv-header h1 {
+    font-size: 2rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skill-card,
+  .timeline-item,
+  .edu-card {
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #000;
+    break-inside: avoid;
+  }
+
+  .timeline {
+    border-left: 3px solid #333;
+  }
+
+  .timeline-item::before {
+    background: #333;
   }
 }

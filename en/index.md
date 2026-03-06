@@ -9,13 +9,14 @@ hide:
 
 **DevOps & Cloud Infrastructure Engineer**
 
-Kubernetes · Jenkins · Argo CD · Docker · Helm · AWS
+Kubernetes · Jenkins · Argo CD · Docker · Terraform · Helm · AWS
 
 <div class="lang-switcher" markdown>
-**🌐** &nbsp; [ES](../) &nbsp;·&nbsp; **EN** &nbsp;·&nbsp; [FR](../fr/)
+**:material-web:** &nbsp; [ES](../) &nbsp;·&nbsp; **EN** &nbsp;·&nbsp; [FR](../fr/)
 </div>
 
 [:fontawesome-brands-linkedin: LinkedIn](https://linkedin.com/in/lucas-aguirre-99-ar){ .md-button .md-button--primary }
+[:fontawesome-brands-github: GitHub](https://github.com/LucasAguirre99){ .md-button .md-button--primary }
 [:fontawesome-solid-envelope: Email](mailto:aguirrelucas.unrc@gmail.com){ .md-button }
 [:fontawesome-solid-file-pdf: Download CV](../assets/CV-2026-DevOps-ENG.pdf){ .md-button }
 
@@ -25,7 +26,7 @@ Kubernetes · Jenkins · Argo CD · Docker · Helm · AWS
 
 ## About me
 
-Telecommunications Engineer specializing in DevOps with comprehensive experience in cloud infrastructure management, container orchestration and continuous delivery. I work daily with Kubernetes, Jenkins, Argo CD, Argo Workflows, Docker, Helm and AWS, focused on automating processes, ensuring service availability and optimizing CI/CD pipelines.
+DevOps & Cloud Infrastructure Engineer with 2+ years of hands-on experience managing production Kubernetes clusters, designing CI/CD pipelines, and delivering reliable cloud infrastructure. I work daily with AWS, Kubernetes, Jenkins, Argo CD, Argo Workflows, Docker, Helm, and Terraform, applying Infrastructure as Code (IaC), GitOps best practices, and full-stack observability (Prometheus, Grafana, Loki) to automate processes, ensure high availability, and optimize delivery pipelines end to end.
 
 ---
 
@@ -34,26 +35,28 @@ Telecommunications Engineer specializing in DevOps with comprehensive experience
 <div class="skills-grid" markdown>
 
 <div class="skill-card" markdown>
-**Orchestration and Containers**
+**Container Orchestration**
 
 - Kubernetes (k9s, Helm, Helmfile)
 - Docker / Docker Compose
 - Image registry management (ECR)
+- HPAs, PVCs, Ingress, ConfigMaps, Secrets
 </div>
 
 <div class="skill-card" markdown>
-**CI/CD and GitOps**
+**CI/CD & GitOps**
 
 - Jenkins (Declarative Pipelines)
-- Argo CD
-- Argo Workflows
+- Argo CD (automatic sync, self-heal, rollbacks)
+- Argo Workflows (DAGs, CronWorkflows, Templates)
 - GitHub Actions
 </div>
 
 <div class="skill-card" markdown>
-**Cloud**
+**Cloud & IaC**
 
 - AWS: EC2, S3, IAM, ECR, EKS
+- Terraform
 - DigitalOcean, Scaleway
 - Secrets Manager, Parameter Store
 </div>
@@ -62,18 +65,18 @@ Telecommunications Engineer specializing in DevOps with comprehensive experience
 **Observability**
 
 - Prometheus + PromQL
-- Grafana
+- Grafana (dashboards, alerting)
 - Loki + LogQL
 - Alertmanager
 </div>
 
 <div class="skill-card" markdown>
-**Systems and Automation**
+**Systems & Automation**
 
 - Linux (Ubuntu / Debian / RHEL)
 - Bash scripting
 - Python
-- Ansible
+- Ansible (playbooks, roles, vault)
 - PostgreSQL
 </div>
 
@@ -81,8 +84,8 @@ Telecommunications Engineer specializing in DevOps with comprehensive experience
 **Languages**
 
 - Spanish — Native
-- English — B1
-- French — B2
+- English — Intermediate (B1)
+- French — Upper-Intermediate (B2)
 </div>
 
 </div>
@@ -97,16 +100,16 @@ Telecommunications Engineer specializing in DevOps with comprehensive experience
 ### :material-briefcase: Futit Services
 **DevOps Engineer** · March 2024 – Present
 
-Responsible for the DevOps infrastructure of production and development environments. I manage the full cycle: from image build to production deployment, monitoring and alerting.
+Responsible for the full DevOps infrastructure of production and development environments. End-to-end ownership: from image build and CI/CD pipeline to production deployment, monitoring, and incident response.
 
-**Kubernetes and Containers**
+**Kubernetes & Containers**
 
 - Administration of Kubernetes clusters on DigitalOcean and Scaleway
 - Management of Deployments, Services, Ingress, ConfigMaps, Secrets, PVCs and HPAs
 - Pod troubleshooting and resource analysis using k9s
 - Multi-stage Docker image builds, tag management and publishing to private registries
 
-**CI/CD and GitOps**
+**CI/CD & GitOps**
 
 - Design and implementation of CI/CD pipelines with Jenkins (Declarative Pipelines): build, test, push and deploy
 - GitOps with Argo CD: Application management, automatic sync, self-heal and rollbacks
@@ -125,13 +128,14 @@ Responsible for the DevOps infrastructure of production and development environm
 - PromQL and LogQL queries for dashboards and alerts
 - Alertmanager configuration: rules, routing and notifications
 
-**Cloud Infrastructure (AWS)**
+**Cloud Infrastructure & IaC (AWS)**
 
 - Management of EC2 instances, S3 buckets, IAM permissions, ECR repositories and EKS clusters
+- Infrastructure provisioning with Terraform
 - Creation of custom AMIs to standardize deployments
 - Secret management with AWS Secrets Manager and SSM Parameter Store
 
-**Systems and Automation**
+**Systems & Automation**
 
 - Linux server administration: firewall (UFW), SSL/TLS certificates (certbot/OpenSSL), cron jobs, systemd
 - Infrastructure configuration automation with Ansible (playbooks, roles, vault)
@@ -178,8 +182,9 @@ Participation in the laboratory virtualization project. Development of radio com
 
 ---
 
-## Certifications and Training
+## Certifications & Training
 
+- :material-certificate: Cybersecurity — Ethical Hacking *(In progress)*
 - :material-certificate: AWS Certified Developer Associate DVA-C02 *(In progress)*
 - :material-certificate: DevOps with Docker, Jenkins, Kubernetes, Git, GitFlow, CI/CD
 - :material-certificate: Linux for Advanced Users
