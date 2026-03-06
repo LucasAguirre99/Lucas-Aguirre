@@ -1,0 +1,102 @@
+site_name: Lucas Aguirre | DevOps Engineer
+site_description: DevOps & Cloud Infrastructure Engineer - Portfolio and reference guide
+site_author: Lucas Aguirre
+docs_dir: .
+site_dir: site
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+repo_url: https://github.com/LucasAguirre99/DevOps-holy-bible
+repo_name: DevOps-holy-bible
+
+nav:
+  - Inicio: index.md
+  - Kubernetes: kubernetes/kubernetes.md
+  - Docker: docker/docker.md
+  - Helm: helm/helm.md
+  - Git: git/git.md
+  - CI/CD: ci-cd/ci-cd.md
+  - Terraform: terraform/terraform.md
+  - Monitoring: monitoring/monitoring.md
+  - Databases: databases/databases.md
+  - Networking: networking/networking.md
+  - Linux:
+    - Sysadmin: sysadmin-linux.md
+    - Bash Cheatsheet: Ciberseguridad/linux/apuntes-linux.md
+  - AWS:
+    - AWS CLI: tools/aws/aws-cli.md
+    - Load Balancer: tools/aws/LoadBalancer.md
+    - Expandir Disco: tools/aws/ELB-storage.md
+    - Crear AMI: tools/aws/AMI/crear-ami.md
+  - Argo: tools/argo/argo.md
+  - Ansible: ansible/ansible.md
+  - VMs: tools/VMs/qemu-guide.md
+  - Etendo: etendo_papiro.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang: es
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/lucas-aguirre-99-ar
+      name: LinkedIn
+    - icon: fontawesome/solid/envelope
+      link: mailto:aguirrelucas.unrc@gmail.com
+      name: Email
+    - icon: fontawesome/brands/github
+      link: https://github.com/LucasAguirre99
+      name: GitHub
+
+extra_css:
+  - assets/cv.css

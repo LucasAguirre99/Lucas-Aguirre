@@ -1,288 +1,150 @@
-# 📜 Holy Bible (Lucas Edition)
+# DevOps Holy Bible
 
-Guía rápida de comandos esenciales para Kubernetes, Git, Docker, Argo CLI y tecnologías varias.
-
---- 
-## 🌐 Páginas webs interesantes
-**[Limpiar y corregir manifiestos de kubernetes](https://validkube.com/)**
-
-**[Actualizaciónes sobre tecnologías](https://app.daily.dev/)**
+Referencia personal de comandos, herramientas y conceptos para el trabajo diario de DevOps.
 
 ---
 
-## 🐳 Docker
-- **Conectarse a un contenedor**:
-  ```bash
-  docker exec -it <container_id> /bin/bash
-  ```
+## Indice
 
-- **Obtener información de una imagen o contenedor**:
-  ```bash
-  docker <image|container> inspect <ID>
-  ```
-
-- **Listar todos los contenedores activos**:
-  ```bash
-  docker ps
-  ```
-
-- **Eliminar todos los contenedores parados**:
-  ```bash
-  docker container prune
-  ```
-
-- **Crear una imagen y subirla a dockerhub**: 
-  ```bash
-  docker build -t imagen:tag . 
-  docker push imagen:tag
-  ```
----
-
-## ☸️ Kubernetes
-- **Copiar archivos hacia y desde un pod**:
-  ```bash
-  kubectl cp <archivo_local> <namespace>/<pod>:<ruta_destino>
-  kubectl cp <namespace>/<pod>:<ruta_origen> <archivo_local>
-  ```
-
-- **Conectarse a un pod**:
-  ```bash
-  kubectl exec -it <pod> -n <namespace> -- /bin/bash
-  ```
-
-- **Escalar servicios**:
-  ```bash
-  kubectl scale <tipo_servicio>/<nombre_servicio> --replicas=<n> -n <namespace>
-  ```
-
-- **Listar todos los pods en un namespace**:
-  ```bash
-  kubectl get pods -n <namespace>
-  ```
-
-- **Escalar todo un tipo de servicio en un namespace**
-  ```bash
-  kubectl scale <tipo_servicio> --all --replicas=<n> -n <namespace>
-  ```
-
-- **Pasar Archivos de un pod a otro, sin importar el namespace**
-  ```bash
-  kubectl exec -n <namespace> <pod> -- tar cf - <archivo> \
-  | kubectl exec -i -n <namespace> <pod> -- tar xf - -C <archivo>
-  ```
----
-
-## 🧑‍💻 Git
-- **Combinar *n* commits en uno solo**:
-  ```bash
-  git reset --soft HEAD~<n>
-  ```
-
-Esto también se puede lograr haciendo un rebase -i y poner squash en los commits que se quieran juntar
-
-- **Volver *n* commits atrás**:
-  ```bash
-  git reset --hard HEAD~<n>
-  ```
-
-- **Limpiar archivos no rastreados**:
-  ```bash
-  git clean -fd
-  ```
-
-- **Mostrar el historial de commits en una sola línea**:
-  ```bash
-  git log --oneline
-  ```
-
-- **Renombrar *n* commits**
-  ```bash
-  git rebase -i HEAD~n
-  ```
-
-Después de esto en la consola que se habre escribir *reword* en los commits que se quieran cambiar, acto seguido nos va a dejar poner el nuevo nombre, después hacemos un push con --force
-
-- **Mover elementos entre ramas** 
-  ```bash
-  git restore --source <branch> carpeta_seleccionada/
-  ```
-
-- **Eliminar ramas de repositorios**
-  ```bash
-  git branch -D <branch>
-  git push origin --delete <nombre_de_la_rama_remota>
-  ```
-
-- **Multiples copias del mismo repositorio**
-  ```bash
-  git worktree add ../<new-folder> <branch>
-  #Listar los worktrees que tenemos
-  git worktree list
-  #Borrar una carpeta cuando ya no nos sirva
-  git worktree remove ../<new-folder>
-  ```
-
-Esto lo que va hacer es crear una carpeta con el nombre que nosotros queremos en la rama que nos interesa, sin la necesidad de tener que hacer un clone de nuevo. Con esto logramos tener varias carpetas con distintas ramas.
+| Tema | Archivo | Descripcion |
+|------|---------|-------------|
+| **Kubernetes** | [kubernetes/kubernetes.md](kubernetes/kubernetes.md) | kubectl, contextos, pods, deployments, RBAC, troubleshooting, k9s |
+| **Docker** | [docker/docker.md](docker/docker.md) | imagenes, contenedores, compose, Dockerfile, redes, volumenes |
+| **Helm** | [helm/helm.md](helm/helm.md) | install, upgrade, rollback, templates, helmfile |
+| **Git** | [git/git.md](git/git.md) | branches, rebase, stash, cherry-pick, worktrees, bisect |
+| **CI/CD** | [ci-cd/ci-cd.md](ci-cd/ci-cd.md) | Jenkins pipelines, GitHub Actions workflows |
+| **Terraform** | [terraform/terraform.md](terraform/terraform.md) | plan, apply, state, modulos, workspaces, providers |
+| **Monitoring** | [monitoring/monitoring.md](monitoring/monitoring.md) | Prometheus, PromQL, Loki, Grafana, k9s, Alertmanager |
+| **Databases** | [databases/databases.md](databases/databases.md) | PostgreSQL, MySQL, Redis, MongoDB |
+| **Networking** | [networking/networking.md](networking/networking.md) | SSH, DNS, firewall, tcpdump, nginx, puertos |
+| **Linux Sysadmin** | [sysadmin-linux.md](sysadmin-linux.md) | checklist servidor nuevo, CPU, memoria, procesos |
+| **Linux Cheatsheet** | [Ciberseguridad/linux/apuntes-linux.md](Ciberseguridad/linux/apuntes-linux.md) | permisos, bash, find, awk/sed/grep, cron, scripting |
+| **AWS CLI** | [tools/aws/aws-cli.md](tools/aws/aws-cli.md) | EC2, S3, IAM, ECR, EKS, CloudWatch, Secrets |
+| **AWS Guias** | [tools/aws/](tools/aws/) | LoadBalancer, ELB storage, crear AMI |
+| **Argo** | [tools/argo/argo.md](tools/argo/argo.md) | Argo CD y Argo Workflows completo |
+| **Ansible** | [ansible/ansible.md](ansible/ansible.md) | playbooks, roles, vault, modulos |
+| **Etendo** | [etendo_papiro.md](etendo_papiro.md) | Gradle, RX, backups, configuracion |
+| **ZSH/Terminal** | [install-zsh-power10k.md](install-zsh-power10k.md) | instalacion de zsh + powerlevel10k |
+| **VMs** | [tools/VMs/qemu-guide.md](tools/VMs/qemu-guide.md) | QEMU/KVM, virt-manager |
+| **Observabilidad** | [tools/observabilidad/README.md](tools/observabilidad/README.md) | helmfile para stack de observabilidad |
 
 ---
 
-## 🚀 Argo CLI
-- **Iniciar sesión en Argo**:
-  ```bash
-  argocd login <IP> --core
-  ```
+## Links utiles
 
-- **Ver logs de una tarea**:
-  ```bash
-  argo logs -n <namespace> <workflow_name> --follow
-  ```
-
-- **Listar todos los workflows en un namespace**:
-  ```bash
-  argo list -n <namespace>
-  ```
+- [Validar/limpiar manifiestos K8s](https://validkube.com/)
+- [Daily.dev - noticias tech](https://app.daily.dev/)
+- [Explicar comandos bash](https://explainshell.com/)
+- [Documentacion Etendo](https://docs.etendo.software/latest/)
 
 ---
 
-# 🐧 Linux
+## Cheatsheet rapido
 
-## Apache 
+### Docker
 
-- Para habilidar módulos en el servidor web de apache se utiliza el comando *a2enmod*, si queremos habilitar algún módulo en particular lo hacemos mediante:
-  ```bash
-  sudo a2enmod <Modulo>
-  ``` 
+```bash
+docker exec -it <container> /bin/bash
+docker logs <container> -f
+docker ps -a
+docker build -t imagen:tag . && docker push imagen:tag
+docker system prune -a        # limpiar TODO (imagenes, contenedores parados, etc)
+docker stats --no-stream      # uso de recursos de todos los contenedores
+```
 
-Este comando va a crear un enlace simbólico entre el archivo de configuración del módulo dentro de (/etc/apache/mods-availables) al directorio de módulos habilitados(/etc/apache2/mod-enabled)
+### Kubernetes
 
-- En el caso que queramos desactivar un módulo simplemente hacemos:
-  ```bash
-  sudo a2dismod <Módulo>
-  ``` 
+```bash
+kubectl get pods -n <namespace>
+kubectl exec -it <pod> -n <namespace> -- /bin/bash
+kubectl logs <pod> -n <namespace> -f
+kubectl scale deployment/<nombre> --replicas=3 -n <namespace>
+kubectl rollout restart deployment/<nombre> -n <namespace>
+kubectl get events -n <namespace> --sort-by='.lastTimestamp'
+kubectl top pods -n <namespace>
+# Copiar archivos
+kubectl cp <namespace>/<pod>:/ruta ./local
+# Port-forward
+kubectl port-forward svc/<servicio> 8080:80 -n <namespace>
+```
 
-Al ejecutar este comando se elimina el enlace simbólico en mod-enabled, lo que impide que apache cargue el módulo al reiniciar o cargar
+### Git
 
-- Si queremos habilitar un archivo de configuraciones de un sitio virtual en apache, lo hacemos con:
-  ```bash
-  sudo a2ensite <Mi-sitio>
-  ```
+```bash
+git reset --soft HEAD~<n>           # juntar n commits
+git reset --hard HEAD~<n>           # volver n commits atras (destruye cambios)
+git clean -fd                        # limpiar archivos no rastreados
+git log --oneline --graph --all
+git rebase -i HEAD~n                 # rebase interactivo
+git stash && git stash pop
+git cherry-pick <hash>
+git worktree add ../<carpeta> <rama> # multiples copias del repo
+```
 
-Este comando habilita sitios adicionales definidos en un archivo dentro de /etc/apache2/sites-available/ para crear un enalce simbólico en sites-enabled
+### Argo CD
 
-- Para deshabilitar un sitio virtual en apache se utiliza:
-  ```bash
-  sudo a2dissite <Mi-sitio>
-  ```
+```bash
+argocd login <IP> --core
+argocd app list
+argocd app sync <app>
+argocd app get <app>
+argocd app delete <app>
+```
 
-Este comando elimina el enlace simbólico del sitio sites-enabled, deshabilitándolo sin borrar la configuración
+### Argo Workflows
 
-- Habilitar un archivo de configuración general en Apache
-  ```bash
-  sudo a2enconf <Archivo-de-config>
-  ```
+```bash
+argo list -n <namespace>
+argo logs -n <namespace> <workflow> --follow
+argo submit workflow.yaml -n <namespace>
+argo delete <workflow> -n <namespace>
+```
 
-Esto habilita configuraciones generales en /etc/apache2/conf-available, lo que permite configuraciones globales no especificas de un sitio
+### SSH
 
-- Deshabilitar un archivo de configuración general en apache:
-  ```bash
-  sudo a2disconf <Archivo-de-config>
-  ```
+```bash
+ssh usuario@host
+ssh -L 8080:localhost:80 usuario@host    # forward puerto remoto a local
+scp archivo.txt usuario@host:/destino/
+ssh-copy-id usuario@host                 # copiar clave publica
+```
 
-Elimina el enlace simbólico en conf-enabled, evitando que apache cargue la configuración global
+### Linux rapido
 
-- Ver toda la configuración de apache: 
-  ```bash
-  apache2ctl -S
-  apache2ctl -t #Revisar la configuración y sintaxis
-  ```
+```bash
+ps aux --sort=-%cpu | head -5           # procesos por CPU
+df -h                                    # espacio en disco
+du -sh /ruta/*                          # tamanio de carpetas
+lsof -i :80                             # que usa el puerto 80
+journalctl -u servicio -f               # logs de un servicio systemd
+sudo systemctl status|start|stop|restart servicio
+tail -f /var/log/syslog
+```
 
+### PostgreSQL
 
+```bash
+psql -U usuario -h host -d base_de_datos
+pg_dump -U postgres -Fc -f backup.dump mi_db
+pg_restore -U postgres -d mi_db -c backup.dump
+```
 
-## Vim
+### Helm
 
-- Mover al inicio: **gg**
+```bash
+helm upgrade --install <release> <chart> -f values.yaml -n <namespace> --create-namespace
+helm list -A
+helm history <release> -n <namespace>
+helm rollback <release> -n <namespace>
+helm template <release> <chart> -f values.yaml   # ver yamls sin aplicar
+```
 
-- Borrar n lineas: **ndd**
+### Terraform
 
-- Borrar todo el archivo: **dG**
-
-- Cerrar y guardar: **:wq**
-
-- Cerrar: **:q**
-
-### Crear y renovar certificados
-
-- Instalamos certbot: 
-  ```bash
-  sudo apt update && apt install certbot python3-certbot-apache -y
-  ```
-
-- Habilitamos los puertos
-  ```bash
-    sudo ufw allow 80
-    sudo ufw allow 443
-  ```
-
-- Obtener los certificados: 
-  ```bash
-  sudo certbot --apache -d sub.dominio.com
-  ```
-
-- Renovación automática:
-  ```bash
-  sudo certbot renew --dry-run
-  ```
----
-
-## Crear comandos
-
-Para crear comandos simplemente podemos hacer un alias o un script
-
-### alias
-
-- zsh: 
-  ```bash
-  nano ~/.zshrc
-  
-  alias <nombre>=<ejecución>
-
-  source ~/.bashrc
-  ```
-
-### Comando sed
-- Reemplazar dentro del archivo:
-  ```bash
-  sed -i "s/Palabra_a_reemplazar/${Valor_a_reemplazar}/g" archivo_donde_se_reemplaza
-  ```
-
----
-# Base de datos (Postgres)
-
-- Conectarse a la base de datos 
-  ```bash
-  psql -U usuario -h Ip-db -d base_de_datos
-  ```
-
-- frenar todas las conexiónes activas de etendo
-  ```bash 
-  psql -U postgres -d postgres -c "
-  SELECT pg_terminate_backend(pid)
-  FROM pg_stat_activity
-  WHERE datname = 'etendo' AND pid <> pg_backend_pid();
-  "
-  ```
-
-- Restaurar base de datos en formato .dump
-  ```bash
-  pg_restore -U user -d base_de_datos -c backup.dump
-  ```
-
----
-
-# Problemas comunes
-
-  - Tomcat no arranca: Puede ser debido a que tenga problemas con los archivos temporales
-      ```
-        sudo rm -f /tmp/tomcat.pid
-        sudo rm -rf /var/lib/tomcat/temp/*
-      ```
+```bash
+terraform init
+terraform plan -out=tfplan
+terraform apply tfplan
+terraform state list
+terraform destroy -target=recurso.nombre
+```
