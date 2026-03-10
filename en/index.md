@@ -35,57 +35,57 @@ DevOps & Cloud Infrastructure Engineer with 2+ years of hands-on experience mana
 <div class="skills-grid" markdown>
 
 <div class="skill-card" markdown>
-**Container Orchestration**
+**:simple-kubernetes: Container Orchestration**
 
-- Kubernetes (k9s, Helm, Helmfile)
-- Docker / Docker Compose
-- Image registry management (ECR)
-- HPAs, PVCs, Ingress, ConfigMaps, Secrets
+- :simple-kubernetes: Kubernetes (k9s, Helm, Helmfile)
+- :simple-docker: Docker / Docker Compose
+- :fontawesome-brands-aws: Image registry management (ECR)
+- :material-gauge: HPAs, PVCs, Ingress, ConfigMaps, Secrets
 </div>
 
 <div class="skill-card" markdown>
-**CI/CD & GitOps**
+**:material-pipe: CI/CD & GitOps**
 
-- Jenkins (Declarative Pipelines)
-- Argo CD (automatic sync, self-heal, rollbacks)
-- Argo Workflows (DAGs, CronWorkflows, Templates)
-- GitHub Actions
+- :simple-jenkins: Jenkins (Declarative Pipelines)
+- :simple-argo: Argo CD (automatic sync, self-heal, rollbacks)
+- :simple-argo: Argo Workflows (DAGs, CronWorkflows, Templates)
+- :simple-githubactions: GitHub Actions
 </div>
 
 <div class="skill-card" markdown>
-**Cloud & IaC**
+**:fontawesome-brands-aws: Cloud & IaC**
 
-- AWS: EC2, S3, IAM, ECR, EKS
-- Terraform
-- DigitalOcean, Scaleway
-- Secrets Manager, Parameter Store
+- :fontawesome-brands-aws: AWS: EC2, S3, IAM, ECR, EKS
+- :simple-terraform: Terraform
+- :simple-digitalocean: DigitalOcean, Scaleway
+- :material-key: Secrets Manager, Parameter Store
 </div>
 
 <div class="skill-card" markdown>
-**Observability**
+**:simple-prometheus: Observability**
 
-- Prometheus + PromQL
-- Grafana (dashboards, alerting)
-- Loki + LogQL
-- Alertmanager
+- :simple-prometheus: Prometheus + PromQL
+- :simple-grafana: Grafana (dashboards, alerting)
+- :simple-loki: Loki + LogQL
+- :material-bell-alert: Alertmanager
 </div>
 
 <div class="skill-card" markdown>
-**Systems & Automation**
+**:fontawesome-brands-linux: Systems & Automation**
 
-- Linux (Ubuntu / Debian / RHEL)
-- Bash scripting
-- Python
-- Ansible (playbooks, roles, vault)
-- PostgreSQL
+- :fontawesome-brands-linux: Linux (Ubuntu / Debian / RHEL)
+- :material-bash: Bash scripting
+- :simple-python: Python
+- :simple-ansible: Ansible (playbooks, roles, vault)
+- :simple-postgresql: PostgreSQL
 </div>
 
 <div class="skill-card" markdown>
-**Languages**
+**:material-translate: Languages**
 
-- Spanish — Native
-- English — Intermediate (B1)
-- French — Upper-Intermediate (B2)
+- :flag-ar: Spanish — Native
+- :flag-gb: English — Intermediate (B1)
+- :flag-fr: French — Upper-Intermediate (B2)
 </div>
 
 </div>
@@ -102,40 +102,40 @@ DevOps & Cloud Infrastructure Engineer with 2+ years of hands-on experience mana
 
 Responsible for the full DevOps infrastructure of production and development environments. End-to-end ownership: from image build and CI/CD pipeline to production deployment, monitoring, and incident response.
 
-**Kubernetes & Containers**
+**:simple-kubernetes: Kubernetes & Containers**
 
 - Administration of Kubernetes clusters on DigitalOcean and Scaleway
 - Management of Deployments, Services, Ingress, ConfigMaps, Secrets, PVCs and HPAs
 - Pod troubleshooting and resource analysis using k9s
 - Multi-stage Docker image builds, tag management and publishing to private registries
 
-**CI/CD & GitOps**
+**:material-pipe: CI/CD & GitOps**
 
 - Design and implementation of CI/CD pipelines with Jenkins (Declarative Pipelines): build, test, push and deploy
 - GitOps with Argo CD: Application management, automatic sync, self-heal and rollbacks
 - Task automation and scheduled workflows with Argo Workflows: DAGs, CronWorkflows and reusable WorkflowTemplates
 - Workflow automation with GitHub Actions
 
-**Application Deployment**
+**:simple-helm: Application Deployment**
 
 - Application lifecycle management with Helm (install, upgrade, rollback)
 - Multi-release and multi-environment management with Helmfile
 - Custom Helm chart development and maintenance
 
-**Observability**
+**:simple-prometheus: Observability**
 
 - Full monitoring stack: Prometheus, Grafana and Loki
 - PromQL and LogQL queries for dashboards and alerts
 - Alertmanager configuration: rules, routing and notifications
 
-**Cloud Infrastructure & IaC (AWS)**
+**:fontawesome-brands-aws: Cloud Infrastructure & IaC (AWS)**
 
 - Management of EC2 instances, S3 buckets, IAM permissions, ECR repositories and EKS clusters
 - Infrastructure provisioning with Terraform
 - Creation of custom AMIs to standardize deployments
 - Secret management with AWS Secrets Manager and SSM Parameter Store
 
-**Systems & Automation**
+**:fontawesome-brands-linux: Systems & Automation**
 
 - Linux server administration: firewall (UFW), SSL/TLS certificates (certbot/OpenSSL), cron jobs, systemd
 - Infrastructure configuration automation with Ansible (playbooks, roles, vault)
@@ -165,6 +165,12 @@ Participation in the laboratory virtualization project. Development of radio com
 ## Education
 
 <div class="education-grid" markdown>
+
+<div class="edu-card edu-card--featured" markdown>
+### :material-shield-lock: Master's in Cybersecurity
+**Universidad Internacional de La Rioja (UNIR)** — Spain
+2025 – Present · <span class="badge-inprogress">In progress</span>
+</div>
 
 <div class="edu-card" markdown>
 ### :material-school: Telecommunications Engineering

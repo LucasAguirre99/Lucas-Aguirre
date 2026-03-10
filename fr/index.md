@@ -35,57 +35,57 @@ Ingénieur en Télécommunications spécialisé en DevOps avec plus de 2 ans d'e
 <div class="skills-grid" markdown>
 
 <div class="skill-card" markdown>
-**Orchestration et Conteneurs**
+**:simple-kubernetes: Orchestration et Conteneurs**
 
-- Kubernetes (k9s, Helm, Helmfile)
-- Docker / Docker Compose
-- Gestion de registres d'images (ECR)
-- HPAs, PVCs, Ingress, ConfigMaps, Secrets
+- :simple-kubernetes: Kubernetes (k9s, Helm, Helmfile)
+- :simple-docker: Docker / Docker Compose
+- :fontawesome-brands-aws: Gestion de registres d'images (ECR)
+- :material-gauge: HPAs, PVCs, Ingress, ConfigMaps, Secrets
 </div>
 
 <div class="skill-card" markdown>
-**CI/CD et GitOps**
+**:material-pipe: CI/CD et GitOps**
 
-- Jenkins (Declarative Pipelines)
-- Argo CD (sync automatique, self-heal, rollbacks)
-- Argo Workflows (DAGs, CronWorkflows, Templates)
-- GitHub Actions
+- :simple-jenkins: Jenkins (Declarative Pipelines)
+- :simple-argo: Argo CD (sync automatique, self-heal, rollbacks)
+- :simple-argo: Argo Workflows (DAGs, CronWorkflows, Templates)
+- :simple-githubactions: GitHub Actions
 </div>
 
 <div class="skill-card" markdown>
-**Cloud et IaC**
+**:fontawesome-brands-aws: Cloud et IaC**
 
-- AWS : EC2, S3, IAM, ECR, EKS
-- Terraform
-- DigitalOcean, Scaleway
-- Secrets Manager, Parameter Store
+- :fontawesome-brands-aws: AWS : EC2, S3, IAM, ECR, EKS
+- :simple-terraform: Terraform
+- :simple-digitalocean: DigitalOcean, Scaleway
+- :material-key: Secrets Manager, Parameter Store
 </div>
 
 <div class="skill-card" markdown>
-**Observabilité**
+**:simple-prometheus: Observabilité**
 
-- Prometheus + PromQL
-- Grafana (dashboards, alertes)
-- Loki + LogQL
-- Alertmanager
+- :simple-prometheus: Prometheus + PromQL
+- :simple-grafana: Grafana (dashboards, alertes)
+- :simple-loki: Loki + LogQL
+- :material-bell-alert: Alertmanager
 </div>
 
 <div class="skill-card" markdown>
-**Systèmes et Automatisation**
+**:fontawesome-brands-linux: Systèmes et Automatisation**
 
-- Linux (Ubuntu / Debian / RHEL)
-- Scripts Bash
-- Python
-- Ansible (playbooks, rôles, vault)
-- PostgreSQL
+- :fontawesome-brands-linux: Linux (Ubuntu / Debian / RHEL)
+- :material-bash: Scripts Bash
+- :simple-python: Python
+- :simple-ansible: Ansible (playbooks, rôles, vault)
+- :simple-postgresql: PostgreSQL
 </div>
 
 <div class="skill-card" markdown>
-**Langues**
+**:material-translate: Langues**
 
-- Espagnol — Langue maternelle
-- Anglais — Intermédiaire (B1)
-- Français — Intermédiaire supérieur (B2)
+- :flag-ar: Espagnol — Langue maternelle
+- :flag-gb: Anglais — Intermédiaire (B1)
+- :flag-fr: Français — Intermédiaire supérieur (B2)
 </div>
 
 </div>
@@ -102,40 +102,40 @@ Ingénieur en Télécommunications spécialisé en DevOps avec plus de 2 ans d'e
 
 Responsable de l'infrastructure DevOps des environnements de production et de développement. Gestion du cycle complet : du build de l'image au déploiement en production, en passant par le monitoring et les alertes.
 
-**Kubernetes et Conteneurs**
+**:simple-kubernetes: Kubernetes et Conteneurs**
 
 - Administration de clusters Kubernetes chez DigitalOcean et Scaleway
 - Gestion des Deployments, Services, Ingress, ConfigMaps, Secrets, PVCs et HPAs
 - Diagnostic de pods et analyse des ressources avec k9s
 - Builds d'images Docker multi-stage, gestion des tags et publication dans des registres privés
 
-**CI/CD et GitOps**
+**:material-pipe: CI/CD et GitOps**
 
 - Conception et implémentation de pipelines CI/CD avec Jenkins (Declarative Pipelines) : build, test, push et déploiement
 - GitOps avec Argo CD : gestion des Applications, synchronisation automatique, self-heal et rollbacks
 - Automatisation des tâches planifiées avec Argo Workflows : DAGs, CronWorkflows et WorkflowTemplates réutilisables
 - Automatisation des workflows avec GitHub Actions
 
-**Déploiement d'Applications**
+**:simple-helm: Déploiement d'Applications**
 
 - Gestion du cycle de vie des applications avec Helm (install, upgrade, rollback)
 - Gestion multi-releases et multi-environnements avec Helmfile
 - Développement et maintenance de charts Helm personnalisés
 
-**Observabilité**
+**:simple-prometheus: Observabilité**
 
 - Stack de monitoring complète : Prometheus, Grafana et Loki
 - Requêtes PromQL et LogQL pour dashboards et alertes
 - Configuration d'Alertmanager : règles, routage et notifications
 
-**Infrastructure Cloud et IaC (AWS)**
+**:fontawesome-brands-aws: Infrastructure Cloud et IaC (AWS)**
 
 - Gestion des instances EC2, buckets S3, permissions IAM, dépôts ECR et clusters EKS
 - Provisionnement d'infrastructure avec Terraform
 - Création d'AMIs personnalisées pour standardiser les déploiements
 - Gestion des secrets avec AWS Secrets Manager et SSM Parameter Store
 
-**Systèmes et Automatisation**
+**:fontawesome-brands-linux: Systèmes et Automatisation**
 
 - Administration de serveurs Linux : pare-feu (UFW), certificats SSL/TLS (certbot/OpenSSL), cron jobs, systemd
 - Automatisation de la configuration d'infrastructure avec Ansible (playbooks, rôles, vault)
@@ -165,6 +165,12 @@ Participation au projet de virtualisation du laboratoire. Développement de proj
 ## Formation
 
 <div class="education-grid" markdown>
+
+<div class="edu-card edu-card--featured" markdown>
+### :material-shield-lock: Master en Cybersécurité
+**Universidad Internacional de La Rioja (UNIR)** — Espagne
+2025 – Présent · <span class="badge-inprogress">En cours</span>
+</div>
 
 <div class="edu-card" markdown>
 ### :material-school: Ingénierie en Télécommunications

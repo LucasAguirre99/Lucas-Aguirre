@@ -126,6 +126,32 @@
   color: var(--md-primary-fg-color);
 }
 
+/* Featured education card (e.g. active Master's) */
+.edu-card--featured {
+  border: 2px solid var(--md-primary-fg-color);
+  background: var(--md-code-bg-color);
+  position: relative;
+}
+
+.edu-card--featured h3 {
+  font-size: 1rem;
+}
+
+/* In-progress badge */
+.badge-inprogress {
+  display: inline-block;
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.15em 0.6em;
+  border-radius: 2rem;
+  vertical-align: middle;
+  margin-left: 0.3em;
+}
+
 /* Language switcher */
 .lang-switcher {
   margin: 0.8rem 0 1.5rem;
@@ -197,6 +223,15 @@
     background: #fff;
     color: #000;
     break-inside: avoid;
+  }
+
+  .edu-card--featured {
+    border: 2px solid #333;
+  }
+
+  .badge-inprogress {
+    background: #333;
+    color: #fff;
   }
 
   .timeline {
