@@ -66,7 +66,7 @@ Ingeniero en Telecomunicaciones especializado en DevOps con más de 2 años de e
 
 - :simple-prometheus: Prometheus + PromQL
 - :simple-grafana: Grafana (dashboards, alertas)
-- :simple-loki: Loki + LogQL
+- :material-text-search: Loki + LogQL
 - :material-bell-alert: Alertmanager
 </div>
 
@@ -83,9 +83,9 @@ Ingeniero en Telecomunicaciones especializado en DevOps con más de 2 años de e
 <div class="skill-card" markdown>
 **:material-translate: Idiomas**
 
-- :flag-ar: Español — Nativo
-- :flag-gb: Inglés — B1 (Intermedio)
-- :flag-fr: Francés — B2 (Intermedio alto)
+- :flag_ar: Español — Nativo
+- :flag_gb: Inglés — B1 (Intermedio)
+- :flag_fr: Francés — B2 (Intermedio alto)
 </div>
 
 </div>
