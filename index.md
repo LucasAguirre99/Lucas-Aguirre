@@ -26,7 +26,7 @@ Kubernetes · Jenkins · Argo CD · Docker · Terraform · Helm · AWS
 
 ## Sobre mí
 
-Ingeniero en Telecomunicaciones especializado en DevOps con más de 2 años de experiencia gestionando infraestructura cloud en producción. Trabajo a diario con Kubernetes, Jenkins, Argo CD, Argo Workflows, Docker, Helm, Terraform y AWS, aplicando prácticas de Infrastructure as Code (IaC), GitOps y observabilidad completa para automatizar procesos, garantizar la disponibilidad de los servicios y optimizar pipelines CI/CD de extremo a extremo.
+Ingeniero en Telecomunicaciones especializado en DevOps con más de 2 años de experiencia gestionando infraestructura cloud en producción. Soy responsable del ciclo completo de la plataforma: diseño de pipelines CI/CD, gestión de workloads en Kubernetes, observabilidad end-to-end y respuesta a incidentes. Trabajo a diario con Kubernetes, Jenkins, Argo CD, Argo Workflows, Docker, Helm, Terraform y AWS, aplicando principios de Infrastructure as Code (IaC), GitOps y automatización para acelerar la entrega, mejorar la fiabilidad y escalar los servicios de forma sostenible.
 
 ---
 
@@ -167,12 +167,6 @@ Participación en el proyecto de virtualización del laboratorio. Desarrollo de 
 <div class="education-grid" markdown>
 
 <div class="edu-card edu-card--featured" markdown>
-### :material-shield-lock: Máster en Ciberseguridad
-**Universidad Internacional de La Rioja (UNIR)** — España
-2025 – Presente · <span class="badge-inprogress">En curso</span>
-</div>
-
-<div class="edu-card" markdown>
 ### :material-school: Ingeniería en Telecomunicaciones
 **Universidad Nacional de Río Cuarto (UNRC)**
 2018 – 2024
@@ -180,7 +174,7 @@ Participación en el proyecto de virtualización del laboratorio. Desarrollo de 
 
 <div class="edu-card" markdown>
 ### :material-school: Ingeniería en Telecomunicaciones
-**Institut National des Sciences Appliquees de Lyon (INSA Lyon)**
+**Institut National des Sciences Appliquées de Lyon (INSA Lyon)**
 2023 – 2024 · Intercambio universitario
 </div>
 
@@ -190,8 +184,13 @@ Participación en el proyecto de virtualización del laboratorio. Desarrollo de 
 
 ## Certificaciones y Formaciones
 
-- :material-certificate: Cybersecurity — Ethical Hacking *(En curso)*
-- :material-certificate: AWS Certified Developer Associate DVA-C02 *(En curso)*
+**En curso**
+
+- :material-certificate-outline: AWS Certified Developer Associate DVA-C02
+- :material-certificate-outline: Cybersecurity — Ethical Hacking
+
+**Completadas**
+
 - :material-certificate: DevOps con Docker, Jenkins, Kubernetes, Git, GitFlow, CI/CD
 - :material-certificate: SO Linux para avanzados
 - :material-certificate: Algoritmos y Desarrollo de Lógica de Programación

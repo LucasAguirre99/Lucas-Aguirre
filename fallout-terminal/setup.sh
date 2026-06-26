@@ -479,11 +479,50 @@ elif [[ "$OS" == "mac" ]]; then
   printf "${DIM}────────────────────────────────────────────────────────${NC}\n"
 fi
 
+# ── 10. cool-retro-term + alias `fallout` ────────────────────────
+log "Configurando cool-retro-term (comando 'fallout')..."
+
+if [[ "$OS" == "linux" ]]; then
+  if ! command -v cool-retro-term &>/dev/null; then
+    sudo apt-get install -y -qq cool-retro-term sqlite3 \
+      || warn "No se pudo instalar cool-retro-term. Instalá manualmente."
+  fi
+elif [[ "$OS" == "mac" ]]; then
+  if ! brew list --cask cool-retro-term &>/dev/null 2>&1; then
+    brew install --cask cool-retro-term 2>/dev/null || warn "No se pudo instalar cool-retro-term via brew."
+  fi
+fi
+
+# Copiar script de inyección de perfil
+mkdir -p "$HOME/.local/share/pipboy"
+cp "$SCRIPT_DIR/assets/inject-crt-profile.sh" "$HOME/.local/share/pipboy/"
+chmod +x "$HOME/.local/share/pipboy/inject-crt-profile.sh"
+
+# Añadir función fallout al .zshrc si no existe
+if ! grep -q "function fallout\|^fallout()" "$HOME/.zshrc" 2>/dev/null; then
+  cat >> "$HOME/.zshrc" << 'FALLOUT_ZSH'
+
+# Pip-Boy: abre cool-retro-term con perfil Fallout en fullscreen
+fallout() {
+  if ! command -v cool-retro-term &>/dev/null; then
+    echo "cool-retro-term no instalado. Corré: sudo apt install cool-retro-term sqlite3"
+    return 1
+  fi
+  bash ~/.local/share/pipboy/inject-crt-profile.sh
+  cool-retro-term --profile "Fallout" --fullscreen &
+}
+FALLOUT_ZSH
+  ok "Alias 'fallout' añadido al .zshrc"
+else
+  warn "Función 'fallout' ya existe en .zshrc"
+fi
+
 # ── Done ─────────────────────────────────────────────────────────
 echo ""
 printf "${BGREEN}════════════════════════════════════════════════════════${NC}\n"
 printf "${BGREEN}  Instalación completa. Abrí una terminal nueva.        ${NC}\n"
 printf "${BGREEN}  Si p10k no estaba configurado: p10k configure         ${NC}\n"
+printf "${BGREEN}  Escribí 'fallout' para abrir el terminal CRT retro.   ${NC}\n"
 printf "${BGREEN}  \"War. War never changes.\"                             ${NC}\n"
 printf "${BGREEN}════════════════════════════════════════════════════════${NC}\n"
 echo ""

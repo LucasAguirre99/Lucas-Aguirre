@@ -26,7 +26,7 @@ Kubernetes · Jenkins · Argo CD · Docker · Terraform · Helm · AWS
 
 ## Profil
 
-Ingénieur en Télécommunications spécialisé en DevOps avec plus de 2 ans d'expérience dans la gestion d'infrastructure cloud en production. Je travaille quotidiennement avec Kubernetes, Jenkins, Argo CD, Argo Workflows, Docker, Helm, Terraform et AWS, en appliquant les pratiques d'Infrastructure as Code (IaC), GitOps et observabilité complète pour automatiser les processus, garantir la disponibilité des services et optimiser les pipelines CI/CD de bout en bout.
+Ingénieur en Télécommunications spécialisé en DevOps avec plus de 2 ans d'expérience dans la gestion d'infrastructure cloud en production. Je suis responsable du cycle de vie complet de la plateforme : conception de pipelines CI/CD, gestion des workloads Kubernetes, observabilité end-to-end et réponse aux incidents. Je travaille quotidiennement avec Kubernetes, Jenkins, Argo CD, Argo Workflows, Docker, Helm, Terraform et AWS, en appliquant les principes d'Infrastructure as Code (IaC), GitOps et automatisation pour accélérer la livraison, améliorer la fiabilité et faire évoluer les services durablement.
 
 ---
 
@@ -167,12 +167,6 @@ Participation au projet de virtualisation du laboratoire. Développement de proj
 <div class="education-grid" markdown>
 
 <div class="edu-card edu-card--featured" markdown>
-### :material-shield-lock: Master en Cybersécurité
-**Universidad Internacional de La Rioja (UNIR)** — Espagne
-2025 – Présent · <span class="badge-inprogress">En cours</span>
-</div>
-
-<div class="edu-card" markdown>
 ### :material-school: Ingénierie en Télécommunications
 **Universidad Nacional de Rio Cuarto (UNRC)**
 2018 – 2024
@@ -190,8 +184,13 @@ Participation au projet de virtualisation du laboratoire. Développement de proj
 
 ## Certifications et Formations
 
-- :material-certificate: Cybersecurity — Ethical Hacking *(En cours)*
-- :material-certificate: AWS Certified Developer Associate DVA-C02 *(En cours)*
+**En cours**
+
+- :material-certificate-outline: AWS Certified Developer Associate DVA-C02
+- :material-certificate-outline: Cybersecurity — Ethical Hacking
+
+**Complétées**
+
 - :material-certificate: DevOps avec Docker, Jenkins, Kubernetes, Git, GitFlow, CI/CD
 - :material-certificate: Linux pour utilisateurs avancés
 - :material-certificate: Algorithmes et Développement de la Logique de Programmation

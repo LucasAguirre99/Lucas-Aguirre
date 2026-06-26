@@ -26,7 +26,7 @@ Kubernetes · Jenkins · Argo CD · Docker · Terraform · Helm · AWS
 
 ## About me
 
-DevOps & Cloud Infrastructure Engineer with 2+ years of hands-on experience managing production Kubernetes clusters, designing CI/CD pipelines, and delivering reliable cloud infrastructure. I work daily with AWS, Kubernetes, Jenkins, Argo CD, Argo Workflows, Docker, Helm, and Terraform, applying Infrastructure as Code (IaC), GitOps best practices, and full-stack observability (Prometheus, Grafana, Loki) to automate processes, ensure high availability, and optimize delivery pipelines end to end.
+Telecommunications Engineer specializing in DevOps with 2+ years of hands-on experience managing production cloud infrastructure. I own the full platform lifecycle: CI/CD pipeline design, Kubernetes workload management, full-stack observability, and incident response. Working daily with Kubernetes, Jenkins, Argo CD, Argo Workflows, Docker, Helm, Terraform, and AWS, I apply Infrastructure as Code (IaC), GitOps, and automation principles to accelerate delivery, improve reliability, and scale services sustainably.
 
 ---
 
@@ -167,12 +167,6 @@ Participation in the laboratory virtualization project. Development of radio com
 <div class="education-grid" markdown>
 
 <div class="edu-card edu-card--featured" markdown>
-### :material-shield-lock: Master's in Cybersecurity
-**Universidad Internacional de La Rioja (UNIR)** — Spain
-2025 – Present · <span class="badge-inprogress">In progress</span>
-</div>
-
-<div class="edu-card" markdown>
 ### :material-school: Telecommunications Engineering
 **Universidad Nacional de Rio Cuarto (UNRC)**
 2018 – 2024
@@ -180,7 +174,7 @@ Participation in the laboratory virtualization project. Development of radio com
 
 <div class="edu-card" markdown>
 ### :material-school: Telecommunications Engineering
-**Institut National des Sciences Appliquees de Lyon (INSA Lyon)**
+**Institut National des Sciences Appliquées de Lyon (INSA Lyon)**
 2023 – 2024 · Exchange Program
 </div>
 
@@ -190,8 +184,13 @@ Participation in the laboratory virtualization project. Development of radio com
 
 ## Certifications & Training
 
-- :material-certificate: Cybersecurity — Ethical Hacking *(In progress)*
-- :material-certificate: AWS Certified Developer Associate DVA-C02 *(In progress)*
+**In Progress**
+
+- :material-certificate-outline: AWS Certified Developer Associate DVA-C02
+- :material-certificate-outline: Cybersecurity — Ethical Hacking
+
+**Completed**
+
 - :material-certificate: DevOps with Docker, Jenkins, Kubernetes, Git, GitFlow, CI/CD
 - :material-certificate: Linux for Advanced Users
 - :material-certificate: Algorithms and Programming Logic Development
